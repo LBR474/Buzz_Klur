@@ -67,12 +67,15 @@ const Spotlight = ({
 };
 
 const Model = () => {
-  const gltf = useLoader(GLTFLoader, "MDel_2.glb");
+  const gltf = useLoader(GLTFLoader, "Klur_brown_bottle_only1.glb");
   return <primitive object={gltf.scene} scale={0.2} position={[0, 0.0, 0]} />;
 };
 
 const Sprite = ({ position }: { position: [number, number, number] }) => {
-  const texture = useLoader(THREE.TextureLoader, "MDEL_small_installation.png");
+  const texture = useLoader(
+    THREE.TextureLoader,
+    "KLur_brown_bottle_1.png"
+  );
 
   // Calculate aspect ratio
   const aspect = texture.image.width / texture.image.height;
