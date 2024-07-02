@@ -26,3 +26,5 @@ dist-ssr
 #my ignores
 MDel_2*
 *.blend
+*.blend1
+
