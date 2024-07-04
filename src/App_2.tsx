@@ -1,12 +1,12 @@
 
-import Component_1 from './components/Component_1'
+import Component_2 from './components/Component_2'
 
 function App() {
   
 
   return (
     <>
-     <Component_1 />
+     <Component_2 />
     </>
   )
 }
