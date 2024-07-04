@@ -41,7 +41,7 @@ let RectAreaLight = ({
   lookAt: [number, number, number];
 }) => {
   const light = useRef<THREE.RectAreaLight>(null!);
-  useHelper(light, RectAreaLightHelper, "red");
+  //useHelper(light, RectAreaLightHelper, "red");
 
   useEffect(() => {
     if (light.current) {
@@ -114,8 +114,8 @@ const Scene = () => {
     scene.background = new THREE.Color(0x87ceeb);
   }, [camera, scene]);
 
-  useHelper(directionalLightRef1, THREE.DirectionalLightHelper, 5);
-  useHelper(directionalLightRef2, THREE.DirectionalLightHelper, 5);
+  // useHelper(directionalLightRef1, THREE.DirectionalLightHelper, 5);
+  // useHelper(directionalLightRef2, THREE.DirectionalLightHelper, 5);
 
   useFrame(() => {
     TWEEN.update();
